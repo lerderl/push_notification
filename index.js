@@ -40,3 +40,9 @@ app.post('/subscribe', (req, res)=>{
     //pass the object into sendNotification function and catch any error
     webpush.sendNotification(subscription, payload).catch(err=> console.error(err));
 })
+
+// Running the server
+const port = 3000;
+app.listen(port, ()=>{
+    console.log(`server started on ${port}`)
+});
