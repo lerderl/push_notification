@@ -13,3 +13,4 @@
 ## CLIENT SIDE
 
 7. Set the static path
+8. Create the required files
