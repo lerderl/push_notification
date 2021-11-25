@@ -14,3 +14,4 @@
 
 7. Set the static path
 8. Create the required files
+9. Set up the service worker which is a script run by the browser in the background separate from the web page and bridges the browser and the network. It usually intercepts requests made by the document in the browser and redirects requests to cache memory to allow offline access
