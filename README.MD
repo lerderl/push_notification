@@ -3,3 +3,4 @@
 2. Created a new node.js application using npm init-y
 3. Installed the required dependencies: npm install –save express, body-parser, web-push
 4. Imported dependencies for building the server side in the index.js file
+5. Generated and set the VAPID keys using: ./node_modules/.bin/web-push generate-vapid-keys
