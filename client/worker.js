@@ -5,8 +5,8 @@ self.addEventListener("push", e => {
       data.title, // title of the notification
       {
           body: "Push notification from me", //the body of the push notification
-          image: "https://pixabay.com/vectors/bell-notification-communication-1096280/",
-          icon: "https://pixabay.com/vectors/bell-notification-communication-1096280/" // icon 
+          image: "/360comms.jpeg",
+          icon: "/360comms.jpeg" // icon
       }
   );
 });
