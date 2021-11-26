@@ -25,23 +25,23 @@ if('serviceWorker' in navigator){
 async function send(){
   //register service worker
   const register = await navigator.serviceWorker.register('/worker.js', {
-      scope: '/'
+    scope: '/'
   });
 
   //register push
   const subscription = await register.pushManager.subscribe({
-      userVisibleOnly: true,
+    userVisibleOnly: true,
 
-      //public vapid key
-      applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
+    //public vapid key
+    applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
   });
- 
+
   //Send push notification
   await fetch("/subscribe", {
       method: "POST",
       body: JSON.stringify(subscription),
       headers: {
-          "content-type": "application/json"
+        "content-type": "application/json"
       }
   });
 }
